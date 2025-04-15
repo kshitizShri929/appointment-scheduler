@@ -1,25 +1,27 @@
 {
-  "name": "hospital-backend",
+  "name": "appointment-backend",
   "version": "1.0.0",
-  "description": "backend support for our webapp",
+  "description": "Backend support for Appointment Scheduling System",
   "main": "app.js",
   "scripts": {
-    "test": "npm run test",
     "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:The-UrvishPatel/Appointment-Scheduling-System.git"
+    "url": "https://github.com/kshitizShri929/appointment-scheduler.git"
   },
   "keywords": [
-    "hospital"
+    "appointment",
+    "scheduling",
+    "hospital",
+    "backend"
   ],
-  "author": "Web Gurus",
+  "author": "Chandan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/The-UrvishPatel/Appointment-Scheduling-System/issues"
+    "url": "https://github.com/kshitizShri929/appointment-scheduler/issues"
   },
-  "homepage": "https://github.com/The-UrvishPatel/Appointment-Scheduling-System#readme",
+  "homepage": "https://github.com/kshitizShri929/appointment-scheduler#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
