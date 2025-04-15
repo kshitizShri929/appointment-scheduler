@@ -120,20 +120,29 @@ const DoctorRegistration = () => {
         
         if (totalValidInputs === (Object.keys(errors).length)) {
 
-          // console.log("Sending data")
+           console.log("Sending data")
 
           let dataToSend = formData
 
           delete dataToSend["confirmPassword"]
 
-          // console.log(dataToSend)
+           console.log(dataToSend)
 
-          await axios.post("/register/organizer", dataToSend)
+          // await axios.post("/register/organizer", dataToSend)
+          // //await axios.post('http://localhost:5000/register/organizer', dataToSend)
+
+          //   .then((response) => {
+          //     console.log("Registered successfully")
+          //     setIsLoading(false);
+          //     // navigate('/');
+
+          //   })
+          await axios
+            .post("http://127.0.0.1:5000/doctor/registration", dataToSend)
             .then((response) => {
-              console.log("Registered successfully")
+              console.log(dataToSend);
               setIsLoading(false);
-            //   navigate('/');
-
+              //navigate('/');
             })
             .catch((error) => {
               setIsLoading(false)
